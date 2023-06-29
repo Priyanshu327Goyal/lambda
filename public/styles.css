@@ -291,8 +291,63 @@ html {
   .problems {
     padding:20px;
     display:flex;
+    flex-wrap:wrap;
   }
 
   .problem {
+    background-color:#DDE6ED;
+    border:none;
+    border-radius:10px;
+    width:350px;
+    padding:25px 10px;
+    margin-right:50px;
+    margin-bottom:50px
+  }
+
+  .problem p {
+    height:45px;
+    font-size:20px;
+    border-radius:5px;
+    padding:5px;
+    margin:10px 15px;
+    background-color:white;
+    color:black;  
+  }
+
+  .problem a {
+    color:black;
+  }
+
+  .problem a:hover {
+    color:#068DA9;
+  }
+
+  .problem-form {
+    background-color:#DDE6ED;
+  }
+
+  .problem-form input {
+    background-color:#9DB2BF;
+    padding:10px;
+    margin:10px 5px;
     width:300px;
+  }
+
+  .problem-form .form-group {
+    margin-left:10px;
+  }
+
+  .problem button {
+    margin-top:8px;
+    margin-left:7px;
+  }
+  .problem .delete {
+    margin-top:8px;
+    margin-left:15px;
+  }
+
+  .problem .platform,.problem .difficulty {
+    margin-top:0;
+    display:inline;
+    width:145px;
   }
