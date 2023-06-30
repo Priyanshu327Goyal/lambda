@@ -61,11 +61,11 @@ useEffect(()=>{
   
 
   function handleDelete(e){
-    const deleteId={
-      _id:e.target.value
-    }
-    axios.post("http://localhost:5000/items/done-delete", deleteId)
-    .catch(err=>console.log(err));
+   const deleteId={
+    _id:e.target.value
+   }
+    // axios.post("http://localhost:5000/items/done-delete", deleteId)
+    // .catch(err=>console.log(err));
   }
 
 
@@ -122,7 +122,7 @@ useEffect(()=>{
             <div  key={index} className="item">
               <input type="checkbox" onChange={handleItemBack} value={itemDone._id} defaultChecked/>
               <p className="doneItem">{itemDone.name}</p>
-              <button className="dustbin" onClick={handleDelete}  value={itemDone._id}><i className="fa-solid fa-trash-can"></i></button>
+              <button className="dustbin" onClick={handleDelete}  value={itemDone._id}><i onClick={handleDelete} value={itemDone._id} className="fa-solid fa-trash-can"></i></button>
             </div>
           );
         })}

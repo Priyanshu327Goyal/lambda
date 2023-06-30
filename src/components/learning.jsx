@@ -104,7 +104,7 @@ function Learning() {
                         <div key={index} className="item">
                         <input type="checkbox" value={toLearnItem._id} onClick={handleToLearn} checked={false} readOnly />
                         <p className="things">{toLearnItem.name}</p>
-                        <button className="dustbin" value={toLearnItem._id} onClick={handleNotToLearn}>--</button>
+                        <button className="minus" value={toLearnItem._id} onClick={handleNotToLearn}>--</button>
                     </div>
 
                     )
