@@ -41,7 +41,6 @@ useEffect(()=>{
 
 
   function handleClick(e) {
-    e.preventDefault();
     const newItem = {
       name: item
     }
@@ -61,11 +60,12 @@ useEffect(()=>{
   
 
   function handleDelete(e){
-   const deleteId={
-    _id:e.target.value
-   }
-    // axios.post("http://localhost:5000/items/done-delete", deleteId)
-    // .catch(err=>console.log(err));
+    const deleteId={
+      _id:  e.target.value == undefined ? e.target.attributes[0].value : e.target.value
+     }
+     
+      axios.post("http://localhost:5000/items/done-delete", deleteId)
+      .catch(err=>console.log(err));
   }
 
 

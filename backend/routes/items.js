@@ -11,9 +11,7 @@ router.route('/').get((req, res)=>{
 router.route('/add').post(async (req, res)=>{
     const newItem=new Item({name:req.body.name});
     await newItem.save()
-    .then(()=>console.log('item added'))
     .catch(err=>console.log(err));
-    res.redirect("/items");
 });
 
 
@@ -35,8 +33,7 @@ router.route('/done').get(async(req, res)=>{
 router.route("/done-delete").post(async(req,res)=>{
    const deleteId=req.body._id;
    await Deleteitem.deleteOne({_id:deleteId})
-   .then(()=>console.log("item deleted"));
-   res.redirect("/items");
+   .catch(err=>console.log(err));
 });
 
 router.route("/back").post(async(req, res)=>{
@@ -45,7 +42,6 @@ router.route("/back").post(async(req, res)=>{
     await Deleteitem.deleteOne({_id:backId});
     const backItem=new Item({name:foundDoneItem.name});
     await backItem.save();
-    res.redirect("/items");
 });
 
 module.exports=router;

@@ -22,7 +22,7 @@ function Blog() {
                 return (
                     <div key={index} className="post">
                         <h1 className="post-title">{post.title}</h1>
-                        <p>
+                        <p className="post-content">
                         {post.content.substring(0, 100) + " ..."} <a href={"/posts/"+post._id}>Read More</a>
                         </p>
                         <hr/>

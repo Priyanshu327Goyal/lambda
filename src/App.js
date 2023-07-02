@@ -8,12 +8,15 @@ import Learnings from "./components/learning.jsx";
 import Compose from "./components/compose.jsx";
 import Post from "./components/post.jsx";
 import Problem from "./components/problem.jsx";
+import Home from "./components/home.jsx";
+
 
 export default function App() {
   return (
     <BrowserRouter>
       <Navbar/>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route exact path="/items" element={<Todo />} />
         <Route exact path ="/posts" element={<Blog />}/>
         <Route exact path="/posts/:postId" element={<Post/>}/>

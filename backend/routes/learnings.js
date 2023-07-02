@@ -17,9 +17,7 @@ router.route("/tolearn").post(async (req, res)=>{
 
 router.route("/nottolearn").post(async (req, res)=>{
     await Tolearnitem.deleteOne({_id:req.body._id})
-    .then(console.log(req.body._id));
-
-    res.redirect("/learnings");
+    .catch(err=>console.log(err));
 });
 
 
@@ -35,7 +33,6 @@ router.route("/learning").post(async (req, res)=>{
      await Tolearnitem.deleteOne({_id:req.body._id});
      const newLearning=new Learningitem({name:Learning.name});
      await newLearning.save();
-     res.redirect("/learnings");
 });
 
 router.route("/notlearning").post(async (req, res)=>{
@@ -47,7 +44,6 @@ router.route("/notlearning").post(async (req, res)=>{
         name:notlearning.name
     });
     await notLearning.save();}
-    res.redirect("/learnings");
 })
 
 router.route("/justlearned").post(async (req, res)=>{
@@ -59,7 +55,6 @@ router.route("/justlearned").post(async (req, res)=>{
         });
         await justLearned.save();
     }
-    res.redirect("/learnings");
 })
 
 router.route("/learned").get((req, res)=>{
@@ -76,7 +71,6 @@ router.route("/notlearned").post(async (req, res)=>{
     });
     await notLearned.save();
 
-    res.redirect("/learnings");
 })
 
 

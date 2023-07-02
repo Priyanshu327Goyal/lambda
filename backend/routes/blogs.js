@@ -19,7 +19,6 @@ router.route('/add').post(async (req, res)=>{
         title:req.body.title,
         content:req.body.content});
     await newPost.save()
-    .then(()=>console.log('Post added'))
     .catch(err=>console.log(err));
 });
 
@@ -27,7 +26,6 @@ router.route('/add').post(async (req, res)=>{
 router.route('/delete').post(async(req, res)=>{
     const deleteId=req.body._id;
     await Post.deleteOne({_id: deleteId})
-    .then(()=>console.log("succesfully deleted"))
     .catch(err=>console.log(err));
 });
 
