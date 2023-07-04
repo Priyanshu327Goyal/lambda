@@ -1,0 +1,41 @@
+[33mcommit d7e3e54ae5d25659d6958d911f31e45be9a7758c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Priyanshu Goyal <priyanshu327goyal@gmail.com>
+Date:   Tue Jul 4 15:16:35 2023 +0530
+
+    add home page
+
+[33mcommit 6f14678ffe61afd5407691aee6f7d454025c7bdf[m
+Author: Priyanshu Goyal <priyanshu327goyal@gmail.com>
+Date:   Sun Jul 2 15:42:27 2023 +0530
+
+    hosted database on MongoDB atlas
+
+[33mcommit 3f7373970e4ca8e05d62be11d78448af22df7e55[m
+Author: Priyanshu Goyal <priyanshu327goyal@gmail.com>
+Date:   Sun Jul 2 15:31:23 2023 +0530
+
+    host database on MongoDB Atlas
+
+[33mcommit 8a5d7d41f0fe4578582c938955913fa3c4d0c0af[m
+Author: Priyanshu Goyal <priyanshu327goyal@gmail.com>
+Date:   Fri Jun 30 12:39:35 2023 +0530
+
+    change css, make responsible
+
+[33mcommit b0b8ea70b0ef45b591826701f093689022cc2352[m
+Author: Priyanshu Goyal <priyanshu327goyal@gmail.com>
+Date:   Thu Jun 29 14:42:23 2023 +0530
+
+    complete cp page
+
+[33mcommit 9ac30c9a06344f9de28bc8595a716f88620f2bb7[m
+Author: Priyanshu Goyal <priyanshu327goyal@gmail.com>
+Date:   Thu Jun 29 12:26:36 2023 +0530
+
+    complete todo, learning, blog page
+
+[33mcommit 2f83fba163ce3c28a6bded01d8a546ff293875e2[m
+Author: Priyanshu Goyal <priyanshu327goyal@gmail.com>
+Date:   Fri May 26 11:02:54 2023 +0530
+
+    Initialize project using Create React App
